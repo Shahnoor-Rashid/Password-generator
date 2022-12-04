@@ -112,11 +112,28 @@ if (length<10){
 // Function for getting a random element from an array
 function getRandom(arr, length) {
 
+
 }
 
 // Function to generate password with user input
 function generatePassword() {
-
+  let allChar = []
+  let [length, checkNumeric, checkLower, checkUpper, checkSpecialCharacter] = [...getPasswordOptions ()];
+  // console.log(length, checkNumeric, checkLower, checkUpper, checkSpecialCharacter)
+  if(checkNumeric){
+    allChar = allChar.concat(numericCharacters)
+  }
+  if (checkLower){
+    allChar = allChar.concat(lowerCasedCharacters)
+  }
+  if (checkUpper){
+    allChar = allChar.concat(upperCasedCharacters)
+  }
+  if (checkSpecialCharacter){
+    allChar = allChar.concat(specialCharacters)
+  }
+  return getRandom(allChar, length);
+  
 
 
 }
