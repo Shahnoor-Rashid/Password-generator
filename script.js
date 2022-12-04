@@ -111,6 +111,12 @@ if (length<10){
 
 // Function for getting a random element from an array
 function getRandom(arr, length) {
+  var finalPassword = ""
+  for(let i=0; i<length; i++){
+    var random = Math.floor(Math.random() * arr.length)
+    finalPassword+= arr[random];
+  }
+  return finalPassword;
 
 
 }
