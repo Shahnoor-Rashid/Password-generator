@@ -13,7 +13,7 @@ Please see below.
 
 ## Installation
 To access the website, please click the link below. 
-[]
+[https://shahnoor-rashid.github.io/Password-generator/]
 
 ## Usage
 When you visit the website, you can click the red button "Generate Password" and follow the on-screen options.
