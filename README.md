@@ -1,7 +1,7 @@
 # Password-generator
 
 
-This is a website of a password generator. You can generate a random password by choosing lower, upper, numeric or special characters, any length between 10 and 64.
+This is a website of a password generator. You can generate a random password by choosing the option of lower, upper, numeric or special characters, any length between 10 and 64.
 ## Table of Contents 
 
 Please see below.
