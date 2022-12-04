@@ -92,10 +92,10 @@ Function to prompt user for password options
 function getPasswordOptions() {
   var length = prompt("Enter the length of password for at least 10 characters and less than 64 characters?")
 if (length<10){
-  alert("Password cannot be less than 10 characters.")
+  alert("Password length cannot be less than 10 characters.")
   return getPasswordOptions();
   }else if(length>64){
-    alert("Password cannot be more than 64 characters.")
+    alert("Password length cannot be more than 64 characters.")
     return getPasswordOptions();
   }
 
