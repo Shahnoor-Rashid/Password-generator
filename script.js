@@ -88,26 +88,36 @@ var upperCasedCharacters = [
   'Z'
 ];
 
-Function to prompt user for password options
+// Function to prompt user for password options
 function getPasswordOptions() {
-  var length = prompt("Enter the length of password for at least 10 characters and less than 64 characters?")
+var length = prompt("Enter the length of password for at least 10 characters and less than 64 characters?")
 if (length<10){
   alert("Password length cannot be less than 10 characters.")
   return getPasswordOptions();
   }else if(length>64){
     alert("Password length cannot be more than 64 characters.")
     return getPasswordOptions();
+  }else {
+  var checkNumeric = confirm("do you want to include numeric characters?")
+  var checkLower = confirm("do you want to include lower characters?")
+  var checkUpper = confirm("do you want to include upper characters?")
+  var checkSpecialCharacter = confirm("do you want to include special characters?")
+  if(checkNumeric || checkLower || checkUpper || checkSpecialCharacter){
+    return [length, checkNumeric, checkLower, checkUpper, checkSpecialCharacter];
   }
-
+  return false;
+}
 }
 
 // Function for getting a random element from an array
-function getRandom(arr) {
+function getRandom(arr, length) {
 
 }
 
 // Function to generate password with user input
 function generatePassword() {
+
+
 
 }
 
