@@ -12,7 +12,7 @@ Please see below.
 
 
 ## Installation
-To access the website, please click the link below. 
+To access the website, please click the link. 
 [https://shahnoor-rashid.github.io/Password-generator/]
 
 ## Usage
